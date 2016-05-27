@@ -76,7 +76,8 @@
         tools:layout_constraintTop_creator="0"
         app:layout_constraintRight_toRightOf="@+id/activity_login"
         android:layout_marginEnd="8dp"
-        tools:layout_constraintRight_creator="0" />
+        tools:layout_constraintRight_creator="0"
+        android:textColor="?android:attr/colorMultiSelectHighlight" />
 
     <TextView
         android:text="Welcome"
