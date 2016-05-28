@@ -15,6 +15,8 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.Console;
+
 public class RegisterActivity extends AppCompatActivity {
 
     @Override
@@ -36,6 +38,8 @@ public class RegisterActivity extends AppCompatActivity {
                     final String username = etUsername.getText().toString();
                     final String email = etEmail.getText().toString();
                     final String password = etPassword.getText().toString();
+
+                    System.out.print("Listener Success");
 
                     Response.Listener<String> responseListener = new Response.Listener<String>() {
                         @Override

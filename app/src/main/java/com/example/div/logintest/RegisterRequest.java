@@ -11,7 +11,7 @@ import java.util.Map;
  */
 // Writen to send data to sql database
 public class RegisterRequest extends StringRequest{
-    private static final String REGISTER_REQUEST_URL = "banerjeed.comlu.com/Register.php";
+    private static final String REGISTER_REQUEST_URL = "http://banerjeed.comlu.com/Register.php";
     private Map<String, String> params;
 
     public RegisterRequest(String name, String username, String email, String password, Response.Listener<String> listener){
