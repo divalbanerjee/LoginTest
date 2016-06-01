@@ -12,7 +12,7 @@ public class UserAreaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_area);
-        final EditText etUsername = (EditText) findViewById(R.id.etUsername);
+        final TextView tvUsername = (TextView) findViewById(R.id.tvUsername);
         final EditText etName = (EditText) findViewById(R.id.etName);
         final TextView welcomeMessage = (TextView) findViewById(R.id.tvWelcome);
 
@@ -22,8 +22,7 @@ public class UserAreaActivity extends AppCompatActivity {
 
         String message =  "Welcome to Cordial, " + name;
         welcomeMessage.setText(message);
-      //  etName.setText(name);
-        etUsername.setText(username);
+        tvUsername.setText(username);
 
     }
 }
