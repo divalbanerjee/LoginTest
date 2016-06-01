@@ -1,5 +1,6 @@
 package com.example.div.logintest;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.EditText;
@@ -14,6 +15,15 @@ public class UserAreaActivity extends AppCompatActivity {
         final EditText etUsername = (EditText) findViewById(R.id.etUsername);
         final EditText etName = (EditText) findViewById(R.id.etName);
         final TextView welcomeMessage = (TextView) findViewById(R.id.tvWelcome);
+
+        Intent intent = getIntent();
+        String name = intent.getStringExtra("name");
+        String username = intent.getStringExtra("username");
+
+        String message =  "Welcome to Cordial, " + name;
+        welcomeMessage.setText(message);
+      //  etName.setText(name);
+        etUsername.setText(username);
 
     }
 }
