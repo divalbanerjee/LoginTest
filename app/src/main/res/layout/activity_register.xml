@@ -97,4 +97,21 @@
         tools:layout_constraintTop_creator="0"
         app:layout_constraintRight_toRightOf="@+id/etPassword"
         tools:layout_constraintRight_creator="0" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="415dp"
+        android:id="@+id/proRegister"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="@+id/btnRegister"
+        tools:layout_constraintLeft_creator="0"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister"
+        android:layout_marginTop="40dp"
+        tools:layout_constraintTop_creator="0"
+        app:layout_constraintRight_toRightOf="@+id/btnRegister"
+        tools:layout_constraintRight_creator="0" />
+
 </android.support.constraint.ConstraintLayout>

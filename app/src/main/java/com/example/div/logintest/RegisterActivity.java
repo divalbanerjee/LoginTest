@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -29,6 +30,7 @@ public class RegisterActivity extends AppCompatActivity {
         final EditText etEmail = (EditText)findViewById(R.id.etEmail);
         final EditText etPassword = (EditText)findViewById(R.id.etPassword);
         final Button btnRegister = (Button) findViewById(R.id.btnRegister);
+        final ProgressBar proRegister = (ProgressBar) findViewById(R.id.proRegister);
 
             btnRegister.setOnClickListener(new View.OnClickListener(){
                 @Override
@@ -39,7 +41,7 @@ public class RegisterActivity extends AppCompatActivity {
                     final String email = etEmail.getText().toString();
                     final String password = etPassword.getText().toString();
 
-                    System.out.print("Listener Success");
+                    proRegister.setVisibility(View.VISIBLE); //This app needs more animation. That way it makes users feel like something is being done
 
                     Response.Listener<String> responseListener = new Response.Listener<String>() {
                         @Override

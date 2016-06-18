@@ -20,8 +20,7 @@ public class UserAreaActivity extends AppCompatActivity {
         String name = intent.getStringExtra("name");
         String username = intent.getStringExtra("username");
 
-        String message =  "Welcome to Cordial, " + name;
-        welcomeMessage.setText(message);
+        welcomeMessage.setText(name);
         tvUsername.setText(username);
 
     }
